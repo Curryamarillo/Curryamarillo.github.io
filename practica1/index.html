@@ -25,7 +25,7 @@
                         Correo:
                         <input type="text" name="correo" placeholder="a@b.es" /><br /><br />
                         hobbies
-                        <textarea name="hobbies" placeholder="mis hobbies !!!!"></textarea>><br /><br />
+                        <textarea name="hobbies" placeholder="mis hobbies !!!!"></textarea><br /><br />
                     </fieldset>
                 </td>
                 <td>
@@ -35,23 +35,23 @@
                         </legend>
                         <p>Puntúa tu nivel de idiomas de 1 a 5:</p>
                         <span><strong>Inglés:</strong></span>
-                        <span>1 </span><input type="radio" name="ingles" value="puntosIngles" checked="checked" />
-                        <span>2 </span><input type="radio" name="ingles" value="puntosIngles" />
-                        <span>3 </span><input type="radio" name="ingles" value="puntosIngles" />
-                        <span>4 </span><input type="radio" name="ingles" value="puntosIngles" />
-                        <span>5 </span><input type="radio" name="ingles" value="puntosIngles" /> <br />
+                        <span>1 </span><input type="radio" name="ingles" value="1" checked="checked" />
+                        <span>2 </span><input type="radio" name="ingles" value="2" />
+                        <span>3 </span><input type="radio" name="ingles" value="3" />
+                        <span>4 </span><input type="radio" name="ingles" value="4" />
+                        <span>5 </span><input type="radio" name="ingles" value="5" /> <br />
                         <span><strong>Inglés:</strong></span>
-                        <span>1 </span><input type="radio" name="frances" value="puntosFrances" checked="checked" />
-                        <span>2 </span><input type="radio" name="frances" value="puntosFrances" />
-                        <span>3 </span><input type="radio" name="frances" value="puntosFrances" />
-                        <span>4 </span><input type="radio" name="frances" value="puntosFrances" />
-                        <span>5 </span><input type="radio" name="frances" value="puntosFrances" /><br />
+                        <span>1 </span><input type="radio" name="frances" value="1" checked="checked" />
+                        <span>2 </span><input type="radio" name="frances" value="2" />
+                        <span>3 </span><input type="radio" name="frances" value="3" />
+                        <span>4 </span><input type="radio" name="frances" value="4" />
+                        <span>5 </span><input type="radio" name="frances" value="5" /><br />
                         <span><strong>Inglés:</strong></span>
-                        <span>1 </span><input type="radio" name="aleman" value="puntosAleman" checked="checked" />
-                        <span>2 </span><input type="radio" name="aleman" value="puntosAleman" />
-                        <span>3 </span><input type="radio" name="aleman" value="puntosAleman" />
-                        <span>4 </span><input type="radio" name="aleman" value="puntosAleman" />
-                        <span>5 </span><input type="radio" name="aleman" value="puntosAleman" />
+                        <span>1 </span><input type="radio" name="aleman" value="1" checked="checked" />
+                        <span>2 </span><input type="radio" name="aleman" value="2" />
+                        <span>3 </span><input type="radio" name="aleman" value="3" />
+                        <span>4 </span><input type="radio" name="aleman" value="4" />
+                        <span>5 </span><input type="radio" name="aleman" value="5" />
                     </fieldset>
                     <fieldset>
                         <legend>
@@ -60,25 +60,25 @@
                         <table>
                             <tr>
                                 <td>
-                                    <span>Writer: </span><input type="checkbox" checked="checked" />
+                                    <span>Writer: </span><input type="checkbox" name="writer" checked="checked" />
                                 </td>
                                 <td>
-                                    <span>Base:</span> <input type="checkbox" />
+                                    <span>Base:</span> <input type="checkbox" name="base" />
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <span>Calc:</span> <input type="checkbox" />
+                                    <span>Calc:</span> <input type="checkbox" name="calc" />
                                 </td>
                                 <td>
-                                    <span>Impress:</span><input type="checkbox" />
+                                    <span>Impress:</span><input type="checkbox" name="impress" />
                                 </td>
                             </tr>
                         </table>
                     </fieldset>
                     <fieldset>
                         <legend><strong>Trabajo con el siguiente sistema operativo:</strong></legend>
-                        <select name="lenguaje" id="lenguaje">
+                        <select name="lenguaje" >
                             <option value="linux" selected="selected">Linux</option>
                             <option value="windows">Windows</option>
                             <option value="ios">IOS</option>
@@ -86,14 +86,16 @@
                     </fieldset>
                 </td>
             </table>
+            <br>
+            <section align="center">
+                <input type="reset" name="limpiar" value="Reiniciar">
+                <input type="image" src="./imagenes/boton.jpg" height="50" alt="Enviar" />
+            </section>
         </form>
     </section>
-    <section align="center">
-        <input type="reset" name="limpiar" value="Reiniciar">
-        <img src="./imagenes/boton.jpg" height="50">
-    </section>
 
-    <a href="/index.html">Volver al inicio.</a>
+
+    <a href="../index.html">Volver al inicio.</a>
 </body>
 
 </html>
