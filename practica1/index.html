@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Práctica Formularios</title>
 </head>
+
 <body>
     <h1>Formulario</h1>
+    <section>
+        <form action="http://ncoge.com/phps/formulario.php" method="post">
+            <table>
+                <td>
+                    <fieldset>
+                        <legend>
+                            <h3>Datos Personales</h3>
+                        </legend>
+                        <br />
+                        Nombre:
+                        <input type="text" name="nombre" placeholder="pascual" /><br /><br />
+                        Apellidos:
+                        <input type="text" name="apellidos" placeholder="ligero" /><br /><br />
+                        Correo:
+                        <input type="text" name="correo" placeholder="a@b.es" /><br /><br />
+                        hobbies
+                        <textarea name="hobbies" placeholder="mis hobbies !!!!"></textarea>><br /><br />
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>
+                            <h3>Idiomas</h3>
+                        </legend>
+                        <p>Puntúa tu nivel de idiomas de 1 a 5:</p>
+                        <span><strong>Inglés:</strong></span>
+                        <span>1 </span><input type="radio" name="ingles" value="puntosIngles" checked="checked" />
+                        <span>2 </span><input type="radio" name="ingles" value="puntosIngles" />
+                        <span>3 </span><input type="radio" name="ingles" value="puntosIngles" />
+                        <span>4 </span><input type="radio" name="ingles" value="puntosIngles" />
+                        <span>5 </span><input type="radio" name="ingles" value="puntosIngles" /> <br />
+                        <span><strong>Inglés:</strong></span>
+                        <span>1 </span><input type="radio" name="frances" value="puntosFrances" checked="checked" />
+                        <span>2 </span><input type="radio" name="frances" value="puntosFrances" />
+                        <span>3 </span><input type="radio" name="frances" value="puntosFrances" />
+                        <span>4 </span><input type="radio" name="frances" value="puntosFrances" />
+                        <span>5 </span><input type="radio" name="frances" value="puntosFrances" /><br />
+                        <span><strong>Inglés:</strong></span>
+                        <span>1 </span><input type="radio" name="aleman" value="puntosAleman" checked="checked" />
+                        <span>2 </span><input type="radio" name="aleman" value="puntosAleman" />
+                        <span>3 </span><input type="radio" name="aleman" value="puntosAleman" />
+                        <span>4 </span><input type="radio" name="aleman" value="puntosAleman" />
+                        <span>5 </span><input type="radio" name="aleman" value="puntosAleman" />
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <h3>Domino los siguientes programas:</h3>
+                        </legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <span>Writer: </span><input type="checkbox" checked="checked" />
+                                </td>
+                                <td>
+                                    <span>Base:</span> <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Calc:</span> <input type="checkbox" />
+                                </td>
+                                <td>
+                                    <span>Impress:</span><input type="checkbox" />
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend><strong>Trabajo con el siguiente sistema operativo:</strong></legend>
+                        <select name="lenguaje" id="lenguaje">
+                            <option value="linux" selected="selected">Linux</option>
+                            <option value="windows">Windows</option>
+                            <option value="ios">IOS</option>
+                        </select>
+                    </fieldset>
+                </td>
+            </table>
+        </form>
+    </section>
+    <section align="center">
+        <input type="reset" name="limpiar" value="Reiniciar">
+        <img src="./imagenes/boton.jpg" height="50">
+    </section>
+
     <a href="/index.html">Volver al inicio.</a>
 </body>
+
 </html>
