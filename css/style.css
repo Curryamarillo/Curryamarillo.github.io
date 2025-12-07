@@ -1,0 +1,36 @@
+body {
+    font-family: "Montserrat";
+    font-size: 1em;
+    background-image: url("../imagenes/background\ image.png");
+    background-position: bottom center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+section {
+    max-width: 600px; 
+    margin: 0 auto;   
+    text-align: center; 
+    padding: 6px;
+}
+
+.encabezado {
+    text-align: center;
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 2em;
+}
+
+ul {
+    padding-left: 130px; 
+    text-align: start;
+}
+
+li {
+    list-style: none;
+    padding: 5px 0;
+    font-weight: bold;
+}
