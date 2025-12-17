@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+nav {
+    background-color: #087054;
+    border: white 2px dashed;
+    padding: 10px 0;
+}
+ul {
+    text-align: center;
+}
+li {
+    display: inline-block;
+    padding: 0 16px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#imagen-fondo {
+    position: fixed;
+    width: 100%;
+}
+#logo {
+    position: relative;
+    top: 120px;
+}
+#logo-nombre {
+    font-family: 'Indie Flower', cursiva;
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    left: 150px;
+    top: -80px;
+    color: white;
+    -webkit-text-stroke: black 0.5px;
+    font-size: 50px;
+}
+#logo-nombre p {
+    font-family: 'Indie Flower', cursiva;
+    font-size: 0.50em;
+    font-weight: bold;
+    position: relative;
+    color: white;
+    top: -20px;
+    -webkit-text-stroke: black 0.5px;
+    font-weight: bolder;
+}
+
+
+#cuerpo {
+    width: 100%;
+    background-color: #404040;
+    padding-bottom: 40px;
+    position: relative;
+    color: #b4bab5;
+    border-bottom: black 5px solid;
+}
+
+footer {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    padding: 8px 0px;
+    bottom: 0;
+    background-color: #087054;
+    text-align: center;
+    border-top: white 2px dashed;
+    border-bottom: white 2px dashed;
+}
+.linea-puntos {
+    border: white 2px dashed;
+    position: absolute;
+    width: 100%;
+}
+.tarjeta {
+    padding: 20px;
+    border: black 5px dashed;
+    border-radius: 20px;
+    background-color: #4c4c4c;
+    position: relative;
+    top: 20px;
+    margin-bottom: 20px;
+}
+.contenedor-tarjetas {
+    border-right: white 2px dashed;
+    margin-right: 180px;
+    padding: 30px;
+    
+}
+.imagen-tarjeta-uno {
+    float: right;
+    height: 500px;
+    border: white dashed 2px;
+    border-radius: 15px;
+    padding: 8px;
+    margin-left: 8px;
+}
+.imagen-tarjeta-dos {
+    float: left;
+    width: auto;
+    height: 420px;
+    border: white dashed 2px;
+    border-radius: 15px;
+    padding: 8px;
+    margin-right: 8px;
+}
+#contenedorRRSS {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+}
+#contenedorRRSS img {
+    display: block;
+    margin: 20px;
+}
+
+#cookies {
+    position: absolute;
+    background-color: white;
+    z-index: 1001;
+    width: 900px;
+    height: 160px;
+    top: 260px;
+    left: 140px;
+    text-align: center;
+    padding: 10px 30px 0 30px;
+    border: 2px red solid;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.636);
+}
+#cookies h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 5px;
+}
+#cookies p {
+color: black;
+margin-bottom: 10px;
+}
+#cookies button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+}
+li:hover {
+    border-bottom: 5px solid orange;
+    margin-bottom: -12px;
+    padding-bottom: 6px;
+}
+.tony:hover {
+    border-bottom: 5px solid orange;
+}
+#contenedorRRSS img:hover {
+    border-bottom: 5px solid orange;
+    margin-bottom: -5px;
+}
