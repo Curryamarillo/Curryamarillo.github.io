@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0px auto;
 }
 
@@ -10,7 +10,8 @@ body {
   font-family: 'Indie Flower', cursive;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
 }
 
@@ -37,8 +38,8 @@ p {
   padding-top: 10px;
 }
 
-#content{
-  
+#content {
+  width: 100%;
 }
 
 #menu {
@@ -49,34 +50,41 @@ p {
   /*1: */
   /*2: */
   /*3: */
-  text-align: center;  
+  text-align: center;
   background-color: #097054;
   border: 1px solid #FF9900;
   font-family: 'Pacifico', cursive;
   font-size: 1.2em;
+  position: fixed;
+  top: 0px;
+  display: inline;
+  width: 100%;
+  z-index: 10;
 }
 
-#menu a{
+#menu a {
   color: white;
   text-decoration: none;
 }
 
 
-#menu li{
+#menu li {
   display: inline;
-  padding-left: 5px;  
+  padding-left: 5px;
 }
 
-#menu li a:hover{
+#menu li a:hover {
   /*
   Punto 1: Los enlaces cambian de color de fondo y estan subrayados de color azul
   */
   /* necesitas 2 instrucciones*/
   /*1: */
   /*2: */
+  background-color: orange;
+  border-bottom: 2px solid blue;
 }
 
-#footer{
+#footer {
   /*
   Punto 6: Barra de pie de pagina siempre estara 
   */
@@ -84,24 +92,28 @@ p {
   /*1: */
   /*2: */
   /*3: */
-  
+
   background-color: #097054;
   text-align: center;
   color: white;
   border-top: 5px solid black;
   clear: both;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
-#footer a{
+#footer a {
   color: white;
   text-decoration: none;
 }
 
-#footer a:hover{
+#footer a:hover {
   color: #443266;
   background-color: white;
   text-decoration: none;
 }
+
 #image {
   text-align: right;
   margin-right: 60px;
@@ -109,7 +121,7 @@ p {
 
 
 #imageLeft {
- /*
+  /*
   Punto 2: La capa de las imagenes debe aparecer a la izquierda de la pantalla
  */
 
@@ -117,10 +129,11 @@ p {
   /*1: */
   text-align: center;
   padding-bottom: 5px;
+  float: left;
 }
 
 #imageRight {
- /*
+  /*
   Punto 2: La capa de las imagenes debe aparecer a la derecha de la pantalla
  */
 
@@ -128,26 +141,28 @@ p {
   /*1: */
   text-align: center;
   padding-bottom: 5px;
+  float: right;
 }
 
 #textMain {
-/*
+  /*
   Punto 3: Para que la capa de la imagen y el float NO sigan la dinamica de la seccion anterior hay que romperla
  */
-
   /* necesitas 1 instruccion*/
   /*1: */
+  clear: both;
 }
 
 #imageToHide {
- /*
+  /*
   Punto 3: La capa de las imagenes debe aparecer a la izquierda de la pantalla
  */
 
   /* necesitas 1 instruccion*/
-  /*1: */  
+  /*1: */
   text-align: center;
   margin-bottom: 40px;
+  float: left;
 }
 
 #textCookie {
@@ -155,31 +170,39 @@ p {
 }
 
 #cookieEU {
- /*
+  /*
   Punto 4: La capa esta posicionada casi al centro de la pantalla. Se diferencia del menu y del footer en que NO se queda fija al hacer scroll de la pagina.
  */
 
   /* necesitas 4 instrucciones. 3 son distancia a los bordes :)*/
-  /*1: */  
-  /*2: */    
-  /*3: */    
-  /*4: */    
-  border:2px solid red;
+  /*1: */
+  /*2: */
+  /*3: */
+  /*4: */
+  border: 2px solid red;
   background-color: white;
   margin-bottom: 5px;
   padding-bottom: 5px;
   box-shadow: 2px 2px 50px black;
+  position: absolute;
+  right: 10%;
+  left: 10%;
+  top: 40%;
+
+
 }
 
 #textOverflow {
- /*
+  /*
   Punto 5: La capa tiene una barra de scroll vertical para que podamos leer el texto que no cabe en el tamaño. Solo vertical, no horizontal
  */
 
   /* necesitas 2 instruccion*/
-  /*1: */  
-  /*2: */  
-  
+  /*1: */
+  /*2: */
+  overflow-y: scroll;
+  overflow-x: hidden;
+
   height: 250px;
   text-align: justify;
   border: 5px solid black;
@@ -193,70 +216,25 @@ p {
   padding: 15px;
   border: 5px dashed black;
   background-color: white;
-  margin: 10px 250px ;
-  border-radius: 30px 30px 30px 30px ;     /* resto */
+  margin: 10px 250px;
+  border-radius: 30px 30px 30px 30px;
+  /* resto */
 }
 
 .button {
-  	background-color: #097054; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  background-color: #097054;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .button:hover {
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-@media all and (max-width: 500px) {
-  #imageLeft {
-    /*
-    Punto 7.1: Barra de menu siempre estara 
-    */
-    /* necesitas 1 instruccion*/
-    /*1: */
-    text-align: center;
-    padding-bottom: 5px;
-  }
-
-  #imageRight {
-    /*
-    Punto 7.1: Barra de menu siempre estara 
-    */
-    /* necesitas 1 instruccion*/
-    /*1: */
-    text-align: center;
-    clear: both;
-  padding-bottom: 5px;
-  }
-  
-  #textCentral {
-    margin: 0px 0px ;
-  }
-  
-  #imageToHide {
-    /*
-    Punto 7.2: Barra de menu siempre estara 
-    */
-    /* necesitas 1 instruccion*/
-    /*1: */
-
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  #textOverflow {
-    margin-right: 0px;
-  }
-  
-  #header {
-    margin-top: 50px;
-  }
- 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media all and (max-width: 300px) {
@@ -265,5 +243,37 @@ p {
     Cambio el margen para que no lo tape el menu
     */
     margin-top: 100px;
+    width: 100%;
+  }
+
+  ul {
+    padding-right: 5%;
+  }
+
+  #content {
+    float: none;
+  }
+
+  #imageRight,
+  #imageLeft,
+  #imageToHide {
+    float: none;
+    clear: both;
+  }
+
+  #textCentral {
+    float: none;
+    display: inline-block;
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  #textOverflow {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 250px;
+    padding: 0px;
+    margin-right: 2px;
+    margin-left: 2px;
   }
 }
