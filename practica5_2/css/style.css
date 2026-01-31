@@ -130,7 +130,7 @@ ul li:hover {
 }
 
 .central-section {
-    display: inline-flex;
+    display: flex;
     background-color: #fefae0ff;
     margin-top: 40px;
     padding-bottom: 80px;
@@ -195,7 +195,6 @@ article p {
 
 .rrss-img {
     width: 100px;
-    fill: #fefae0ff;
     padding: 40px 20px 20px 20px;
 }
 
@@ -230,6 +229,7 @@ footer {
 @media all and (max-width: 650px) {
     nav {
         padding: 0px 5px 0px 5px;
+        font-size: 0.75em;
     }
 
     .logo {
@@ -253,21 +253,29 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .text-section {
-        width: 90%;
+        width: 100%;
     }
 
     .rrss-section {
         flex-direction: row;
-        width: 15%;
-        height: auto;
+        gap: 5px;
+        height: 100%;
         margin-top: 0px;
-        margin-right: 0px;
+        margin-right: 5px;
+        margin-left: 5px;
         padding: 0px;
+        justify-content: center;
     }
-
+    .rrss-img {
+    width: 80px;
+    fill: #fefae0ff;
+    padding: 20px 20px 20px 20px;
+    }
     article {
         display: flex;
         flex-direction: column;
