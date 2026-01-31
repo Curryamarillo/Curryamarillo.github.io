@@ -5,22 +5,74 @@
 }
 
 body {
-    background-image: url('../images/background.webp');
+    background-image: url('../images/background-fruit.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgba(40, 54, 24, 0.37);
 }
+
+h2 {
+    margin-bottom: 8px;
+    color: #bc6c25ff;
+}
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
+    color: white;
 }
+
+#cookies {
+    position: fixed;
+    left: 10%;
+    top: 30%;
+    display: flex;
+    gap: 10px;
+    padding: 25px;
+    width: 80%;
+    height: auto;
+    background-color: #606c38ff;
+    border-radius: 5px;
+    color: #fefae0ff;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btns-cookies {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-aceptar {
+    background-color: #bc6c25ff;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 105px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.btn-otros {
+    background-color: #dda15eff;
+    border-radius: 5px;
+    color: #283618ff;
+    padding: 8px 105px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
 nav {
-    background-color:#3C241Bff;
+    background-color: #fefae0ff;
     height: 60px;
-    border-top: 2px solid rgba(255, 255, 255);
-    border-bottom: 2px solid rgba(255, 255, 255);
+    border-top: 2px solid #dda15eff;
+    border-bottom: 2px solid #dda15eff;
 }
 
 ul {
@@ -33,62 +85,200 @@ ul {
 }
 
 ul li {
-    font-size: 1.3em; 
-    border-bottom: 5px solid transparent; 
+    font-size: 1.3em;
+    border-bottom: 5px solid transparent;
     transition: border-color 0.4s ease, color 0.4s ease;
     display: flex;
     align-items: center;
-    height: 100%; 
+    height: 100%;
 }
-ul li a {
+
+a {
     text-decoration: none;
-    color: white;
+    color: #606c38ff;
 }
+
 ul li:hover {
-    border-bottom: 5px solid rgb(255, 123, 0);
-    color: rgb(255, 123, 0); 
+    border-bottom: 5px solid #bc6c25ff;
+    color: #bc6c25ff;
 }
+
 .logo {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     width: 220px;
+    height: 100%;
+    border-radius: 5px;
+    margin-left: 8%;
+    background-color: rgba(40, 54, 24, 0.8);
+    padding: 10px;
 }
-.logo-img {
-    height: 150px;
-    border-radius: 50%;
-    margin-left: 60px;
-    margin-top: 20px;
-    display: flex;
-}
-.logo h1 {
-    margin-left: 50px;
-    background-color: rgba(255, 0, 0, 0.398);
-    padding: 5px;
-}
-.central-section {
-    display: inline-flex;
-    background-color: rgb(157, 33, 31);
-    margin-top: 40px;
-    height: 1500px;
-    width: 100%;
-    z-index: 10;
-    border-top: 2px solid white;
-}
-.text-section {
-    width: 80%;
 
+.logo-img {
+    height: 160px;
+    border-radius: 50%;
 }
-article {
-    padding: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.406);
+
+.logo h1 {
+    background-color: #fefae0ff;
+    padding: 5px;
+    color: #606c38ff;
+    font-size: 1.5em;
+    margin-top: 10px;
     border-radius: 5px;
 }
+
+.central-section {
+    display: inline-flex;
+    background-color: #fefae0ff;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    width: 100%;
+    z-index: 10;
+    border-top: 2px solid #bc6c25ff;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-width: 400px;
+    margin: 20px 20px 0px 20px;
+    gap: 20px;
+}
+
+article {
+    padding: 30px;
+    border: 1px solid #bc6c25ff;
+    border-radius: 5px;
+    background-color: #fefae0ff;
+    color: #283618ff;
+}
+
+article img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #606c38ff;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+.img-manzanas {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.img-citricos {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
 .rrss-section {
     display: inline-flex;
     flex-direction: column;
+    gap: 20px;
+    background-color: #fefae0ff;
+    width: 25%;
+    height: auto;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 20px;
 }
-.rrss-section img {
-    padding: 20%;
-    width: 150px;
+
+.rrss-img {
+    width: 100px;
+    fill: #fefae0ff;
+    padding: 40px 20px 20px 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    background-color: #fefae0ff;
+    height: 60px;
+    color: #283618ff;
+    border-top: 2px solid #dda15eff;
+    border-bottom: 2px solid #dda15eff;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.nombre-autor:hover {
+    transition: border-color 0.4s ease, color 0.4s ease;
+    border-bottom: 5px solid #bc6c25ff;
+    color: #bc6c25ff;
+}
+
+@media all and (max-width: 860px) {
+    footer {
+        padding-left: 10px;
+        padding-right: 6px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    nav {
+        padding: 0px 5px 0px 5px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cookies {
+        flex-direction: column;
+    }
+
+    .btn-aceptar,
+    .btn-otros {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .central-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-section {
+        width: 90%;
+    }
+
+    .rrss-section {
+        flex-direction: row;
+        width: 15%;
+        height: auto;
+        margin-top: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    article img {
+        float: none;
+        
+    }
+    footer {
+        padding: 4px;
+    }
 }
