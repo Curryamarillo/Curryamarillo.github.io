@@ -1,37 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo invisible</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Amigo Invisible</title>
 </head>
-
 <body>
-    <h1>Amigo Invisible</h1>
-    <div id="container">
-        <section id="main-section">
-            <form action="">
-                <label for="nombre">Ingrese el nombre: </label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre del amigo">
-                <input id="btn-agregar" type="submit" value="Añade amigo"></input>
-                <input id="btn-resolver" type="submit" value="Resolver"></input>
-
-            </form>
-            <ul id="lista-input">
-
-            </ul>
-            <article id="data-response">
-                <ul id="lista-response">
-
-                </ul>
-            </article>
-        </section>
-    </div>
-
-
-    <script src="index.js"></script>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Nombre del amigo">
+        <input type="submit" value="Añade amigo" id="botonAnyadir">
+    </form>
+    <input type="button" value="Resuelve" id="botonResuelve">
+    <div id="panel"></div>
+    <div id="solucion"></div>
+    <script src="js/app.js"></script>
 </body>
-
 </html>
