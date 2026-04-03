@@ -6,6 +6,46 @@
 li {
     list-style: none;
 }
+h1 {
+    font-size: 1.8em;
+    
+}
 body {
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(78, 78, 78);
+}
+.input-text {
+    padding: 5px 10px;
+    margin: 10px 8px 6px 8px;
+    font-size: 1.2em;
+}
+#codificar {
+    background-color: rgb(237, 29, 29);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 5px;
+    font-weight: bold;
+    border: none;
+}
+#container {
+    padding: 8px 20px;
+    background-color: rgb(255, 128, 0);
+    border-radius: 5px;
+}
+#frase-codificada {
+    margin-top: 10px;
+    padding: 12px 22px;
+    font-size: 1.4em;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
 }
