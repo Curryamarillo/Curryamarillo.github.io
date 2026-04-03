@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigo invisible</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
-    <form action="">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Nombre del amigo">
-        <input type="submit" value="Añade amigo" id="botonAnyadir">
-    </form>
-    <input type="button" value="Resuelve" id="botonResuelve">
-    <div id="panel"></div>
-    <div id="solucion"></div>
-    <script src="js/app.js"></script>
-    </div>
+        <form action="">
+            <label for="nombre">Nombre:</label>
+            <input class="in-nombre" type="text" id="nombre" placeholder="Nombre del amigo">
+            <input class="in-button" type="submit" value="Añade amigo" id="botonAnyadir">
+        </form>
+        <input class="re-button" type="button" value="Resuelve" id="botonResuelve">
+        <div class="re-container">
+            <div id="panel"></div>
+            <div id="solucion"></div>
+        </div>
 
+        <script src="js/app.js"></script>
+    </div>
 </body>
+
 </html>
