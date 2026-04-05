@@ -16,7 +16,6 @@
     <div id="resultado"></div>
     <script>
         let moneda = "EUR"
-        //let moneda="USD"
         let url = `https://api.frankfurter.dev/v1/latest?base=${moneda}`
 
         let cantidad = document.getElementById("cantidad")
@@ -27,12 +26,14 @@
         /*
             Devuelve un li con los datos de la moneda
         */
-        function creaElemento(valor, clave) {
+        function creaElemento(clave, valor) {
             let total = Math.round(parseFloat(cantidad.value) * parseFloat(valor) * 100) / 100
             /*  ACABALO  */
-            let card = document.createElement("div");
-            
-
+            let liElement = document.createElement("li");
+            liElement.setAttribute("class", "item-lista");
+            liElement.innerHTML=`
+            <strong>${cantidad.value} ${clave}</strong><span> son: ${total}€</span>
+            `
             //let liElement ....
             /*  FIN ACABALO  */
             return liElement
@@ -54,7 +55,8 @@
                     cambios.forEach(([clave, valor]) => {
                         console.log(clave, valor);
                         /*  ACABALO  */
-
+                        resultado.appendChild(creaElemento(clave, valor));
+                        
 
                         //usa creaElemento(valor, clave)
                         /*  FIN ACABALO  */
